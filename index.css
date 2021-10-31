@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+
+:root{
+   --right_background: #167a4a;
+   --link_color: #66cc99;
+   --left_background:#3d3e42;
+   --right_color:#ffffff;
+   --left_color:#9099a0;
+}
+
+html,body {
+   height: 100%;
+}
+
+body {
+   font-family: 'Open Sans', sans-serif;
+   font-size:16px;
+   margin:0;
+   height:auto;
+   display:flex;
+}
+a{
+      color:var(--link_color); 
+      text-decoration:none;
+}
+
+#left_side{
+   background-color:var(--left_background);
+   color:var(--left_color);
+   float:left;
+   display:block;
+   flex-grow:1;
+   padding:1.5em;
+}
+
+#name{
+   font-size:2em;
+   display:inline-block;
+}
+
+#name img{
+   border-radius: 1em;
+   height: 10em;
+   display:block;
+   margin:auto;
+}
+
+#name h1{
+   padding-top:.0;
+   margin-top:0;
+   text-align:center;
+}
+
+#pages ul{
+   padding-left:0;
+}
+
+ul {
+   list-style-type: none;
+}
+
+#right_side{
+   flex-grow:4;
+   background-color:var(--right_background);
+   float:right;
+   display:block;
+   width:fit-content;
+   color:var(--right_color);
+   padding:1.5em;
+   padding-right:2em;
+   padding-left:2em;
+   text-align:left;
+}
+
+th {
+   padding-right:1em;
+   padding-top:.5em;
+   vertical-align: top;
+}
+
+td {
+   width:10em;
+   padding-right:1em;
+   padding-bottom:.5em
+}
+td+td {
+   width: auto;
+}
+
+.skills{
+   display:flexbox;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+.skills li{
+   display:inline-block;
+   padding-left:1em;
+   padding-right:1em;
+}
